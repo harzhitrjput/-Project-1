@@ -1,0 +1,12 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "Currency Converter - B.Tech CSE (DS) Mini Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Harshit Rajput",
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}

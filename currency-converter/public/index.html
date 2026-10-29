@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Currency Converter</h1>
+    <p class="subtitle">Fast, accurate conversions with live exchange rates</p>
+
+    <div class="field">
+      <label for="amount">Amount</label>
+      <input id="amount" type="number" inputmode="decimal" min="0" step="any" value="1" placeholder="Enter amount" />
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="from">From</label>
+        <select id="from"></select>
+      </div>
+      <button id="swap" class="swap" type="button" title="Swap currencies" aria-label="Swap currencies">⇄</button>
+      <div class="field">
+        <label for="to">To</label>
+        <select id="to"></select>
+      </div>
+    </div>
+
+    <button id="convert" class="primary" type="button">Convert</button>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <section id="result" class="result" hidden>
+      <div class="from-line" id="fromLine"></div>
+      <div class="to-line" id="toLine"></div>
+      <div class="meta" id="rateLine"></div>
+      <div class="meta"><span id="badge" class="badge"></span> <span id="updated"></span></div>
+    </section>
+
+    <section class="history" id="historyBox" hidden>
+      <h2>Recent conversions</h2>
+      <ul id="historyList"></ul>
+      <button id="clearHistory" class="link" type="button">Clear</button>
+    </section>
+  </main>
+
+  <footer>Mini Project &middot; Harshit Rajput &middot; B.Tech CSE (DS) &middot; Lloyd Institute of Engineering &amp; Technology</footer>
+  <script src="script.js"></script>
+</body>
+</html>
